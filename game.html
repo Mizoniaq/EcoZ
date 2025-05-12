@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Days for the Planet - Game</title>
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="stats-bar">
+            <div class="stat">
+                <span class="icon">♻️</span>
+                <span class="label">Environmental Score</span>
+                <span class="value" id="eco-score">50</span>
+            </div>
+            <div class="stat">
+                <span class="icon">💸</span>
+                <span class="label">Budget</span>
+                <span class="value" id="budget-score">100</span>
+            </div>
+            <div class="stat">
+                <span class="icon">🌤️</span>
+                <span class="label">Well-being</span>
+                <span class="value" id="wellbeing-score">50</span>
+            </div>
+            <div class="stat">
+                <span class="icon">🌫️</span>
+                <span class="label">Pollution</span>
+                <span class="value" id="pollution-score">50</span>
+            </div>
+        </div>
+
+        <div class="game-content">
+            <div class="day-counter">Day <span id="current-day">1</span>/7</div>
+            <h2 id="situation-title">Situation Title</h2>
+            <p id="situation-text">Situation description...</p>
+            <div class="choices" id="choices-container">
+                <!-- Choices will be injected here by JavaScript -->
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
