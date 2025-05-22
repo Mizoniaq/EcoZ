@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoZ - Sustainability Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .guide-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            align-items: center;
+            margin-bottom: 2.5rem;
+        }
+        .guide-flex.reverse {
+            flex-direction: row-reverse;
+        }
+        .guide-img {
+            flex: 1 1 260px;
+            min-width: 220px;
+            max-width: 340px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+            object-fit: cover;
+            margin: 0 auto;
+        }
+        .guide-content {
+            flex: 2 1 350px;
+            background: #23231f;
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+            z-index: 1;
+            position: relative;
+        }
+        .guide-box {
+            background: #23231f;
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+        }
+        .eco-list.guide-icons li::before {
+            content: '\1F331'; /* 🌱 */
+            color: #6fcf97;
+            margin-right: 0.7rem;
+            font-size: 1.25rem;
+            vertical-align: middle;
+            display: inline-block;
+            line-height: 1;
+            position: relative;
+            top: 2px;
+        }
+        .eco-list.guide-icons li {
+            padding-left: 0.2rem;
+        }
+        @media (max-width: 900px) {
+            .guide-flex { flex-direction: column; gap: 1.5rem; }
+            .guide-flex.reverse { flex-direction: column; }
+            .guide-img { max-width: 100%; }
+            .guide-content { padding: 1.2rem 0.7rem; }
+        }
+        .sticky-footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            background: #23231f;
+            color: #888;
+            text-align: center;
+            padding: 0.7rem 0 0.7rem 0;
+            font-size: 0.95rem;
+            z-index: 9998;
+            border-top: 1.5px solid #2e2e2e;
+        }
+    </style>
+</head>
+<body style="min-height:100vh;display:flex;flex-direction:column;">
+    <header class="main-header">
+        <div class="header-content">
+            <span class="site-title">ECOZ</span>
+            <nav class="main-nav">
+                <a href="game.html">Game</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+    <main class="eco-main" style="max-width:98vw; width:98vw; padding:0 0; margin:0 auto;flex:1 0 auto;">
+        <article class="eco-section card" style="max-width:98vw; width:100%; margin:2.5rem 0; border-radius:0; box-shadow:none; padding-left:1vw; padding-right:1vw;">
+            <h1 class="eco-title" style="font-size:2.3rem;">The Ultimate Sustainability Guide</h1>
+            <p style="font-size:1.15rem; color:#bfa76f; margin-bottom:2.5rem;">Everything you need to know to reduce your impact and live more sustainably.</p>
+
+            <div class="guide-flex">
+                <img class="guide-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Forest and sunrise">
+                <div class="guide-content">
+                    <h2>Introduction</h2>
+                    <p>
+                        Living sustainably means making choices that protect the environment, support communities, and ensure a better future for all. This guide provides practical advice, key actions to take, and common mistakes to avoid in your daily life.
+                    </p>
+                </div>
+            </div>
+
+            <div class="guide-flex reverse">
+                <img class="guide-img" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Bike and city">
+                <div class="guide-content guide-box">
+                    <h2>What You Should Do: Positive Actions</h2>
+                    <ul class="eco-list guide-icons">
+                        <li><strong>Reduce, Reuse, Recycle:</strong> Always prioritize reducing waste, reusing items, and recycling materials properly.</li>
+                        <li><strong>Choose Sustainable Transport:</strong> Walk, bike, use public transport, or carpool whenever possible.</li>
+                        <li><strong>Eat Local and Seasonal:</strong> Favor local, seasonal, and plant-based foods to lower your carbon footprint.</li>
+                        <li><strong>Save Energy:</strong> Turn off lights, unplug devices, and use energy-efficient appliances.</li>
+                        <li><strong>Conserve Water:</strong> Take shorter showers, fix leaks, and use water-saving devices.</li>
+                        <li><strong>Support Renewable Energy:</strong> Choose green energy providers or install solar panels if possible.</li>
+                        <li><strong>Buy Less, Buy Better:</strong> Choose quality, durable products and avoid unnecessary purchases.</li>
+                        <li><strong>Engage in Community:</strong> Share, repair, and collaborate with others for a greater impact.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guide-flex">
+                <img class="guide-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Plastic waste">
+                <div class="guide-content guide-box">
+                    <h2>What You Should Avoid: Common Mistakes</h2>
+                    <ul class="eco-list guide-icons">
+                        <li><strong>Single-Use Plastics:</strong> Avoid disposable bags, bottles, and packaging.</li>
+                        <li><strong>Overconsumption:</strong> Don't buy more than you need or fall for fast fashion.</li>
+                        <li><strong>Wasting Food:</strong> Plan meals, store food properly, and compost leftovers.</li>
+                        <li><strong>Leaving Devices On:</strong> Don't leave electronics or lights on when not in use.</li>
+                        <li><strong>Ignoring Local Products:</strong> Avoid imported goods when local alternatives exist.</li>
+                        <li><strong>Neglecting Biodiversity:</strong> Don't use pesticides or harm local wildlife and plants.</li>
+                        <li><strong>Throwing Away Repairable Items:</strong> Try to repair before replacing.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guide-flex reverse">
+                <img class="guide-img" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80" alt="Composting">
+                <div class="guide-content guide-box">
+                    <h2>Practical Tips for Everyday Life</h2>
+                    <ul class="eco-list guide-icons">
+                        <li>Bring your own reusable bag, bottle, and cup everywhere.</li>
+                        <li>Compost food scraps and garden waste.</li>
+                        <li>Choose eco-friendly cleaning and personal care products.</li>
+                        <li>Plant trees or support reforestation projects.</li>
+                        <li>Get involved in local environmental initiatives.</li>
+                        <li>Educate friends and family about sustainability.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guide-box" style="text-align:center;">
+                <h2>Conclusion</h2>
+                <p style="max-width:600px;margin:0 auto;">
+                    Every small action counts. By making conscious choices every day, you contribute to a healthier planet and inspire others to do the same. Sustainability is a journey—start yours today!
+                </p>
+            </div>
+        </article>
+    </main>
+    <footer class="main-footer" style="flex-shrink:0;">
+        <div class="footer-links">
+            <a href="about.html">About</a> | <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-copy">© 2024 EcoZ. Educational Project.</div>
+    </footer>
+
+    <script src="chatbot.js"></script>
+</body>
+</html> 

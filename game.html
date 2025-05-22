@@ -3,44 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7 Days for the Planet - Game</title>
-    <link rel="stylesheet" href="game.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>EcoZ - Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="game-container">
+<body style="min-height:100vh;display:flex;flex-direction:column;">
+    <header class="main-header">
+        <div class="header-content">
+            <span class="site-title">ECOZ</span>
+            <nav class="main-nav">
+                <a href="eco-info.html">Guide</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
         <div class="stats-bar">
-            <div class="stat">
-                <span class="icon">♻️</span>
-                <span class="label">Environmental Score</span>
-                <span class="value" id="eco-score">50</span>
-            </div>
-            <div class="stat">
-                <span class="icon">💸</span>
-                <span class="label">Budget</span>
-                <span class="value" id="budget-score">100</span>
-            </div>
-            <div class="stat">
-                <span class="icon">🌤️</span>
-                <span class="label">Well-being</span>
-                <span class="value" id="wellbeing-score">50</span>
-            </div>
-            <div class="stat">
-                <span class="icon">🌫️</span>
-                <span class="label">Pollution</span>
-                <span class="value" id="pollution-score">50</span>
-            </div>
+            <div class="stat"><span class="icon">♻️</span> Environmental <span class="stat-value" id="eco-score">50</span></div>
+            <div class="stat"><span class="icon">💸</span> Budget <span class="stat-value" id="budget-score">100</span></div>
+            <div class="stat"><span class="icon">🌤️</span> Well-being <span class="stat-value" id="wellbeing-score">50</span></div>
+            <div class="stat pollution"><span class="icon">☁️</span> Pollution <span class="stat-value" id="pollution-score">50</span></div>
         </div>
-
-        <div class="game-content">
-            <div class="day-counter">Day <span id="current-day">1</span>/7</div>
-            <h2 id="situation-title">Situation Title</h2>
-            <p id="situation-text">Situation description...</p>
-            <div class="choices" id="choices-container">
-                <!-- Choices will be injected here by JavaScript -->
+    </header>
+    <main class="eco-main" style="flex:1 0 auto;">
+        <section class="eco-section card">
+            <h1 class="eco-title">EcoZ Game</h1>
+            <div class="game-content">
+                <div class="day-counter">Day <span id="current-day">1</span>/7</div>
+                <h2 id="situation-title">Situation Title</h2>
+                <p id="situation-text">Situation description...</p>
+                <div class="choices" id="choices-container">
+                    <!-- Choices will be injected here by JavaScript -->
+                </div>
             </div>
+        </section>
+    </main>
+    <footer class="main-footer" style="flex-shrink:0;">
+        <div class="footer-links">
+            <a href="about.html">About</a> | <a href="#">Privacy Policy</a>
         </div>
-    </div>
+        <div class="footer-copy">© 2024 EcoZ. Educational Project.</div>
+    </footer>
     <script src="game.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 </html> 
