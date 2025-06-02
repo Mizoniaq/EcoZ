@@ -39,7 +39,7 @@ EcoZ is an interactive project promoting environmental awareness and sustainable
 |      | Feature         | Summary       |
 | :--- | :---:           | :---          |
 | 🎮  | **Interactive Game**  | <ul><li>Decision-based ecological game with multiple scenarios</li><li>Dynamic score and ending system</li></ul> |
-| 🤖  | **Chatbot Integration** | <ul><li>Integrated chatbot for eco-questions</li><li>Powered by n8n and OpenAI workflow</li></ul> |
+| 🤖  | **Chatbot Integration** | <ul><li>Integrated chatbot for eco-questions</li><li>Powered by n8n and OpenAI workflow</li><li>Communication via webhook requests between the website and n8n</li></ul> |
 | 📚  | **Sustainability Guide** | <ul><li>Comprehensive guide for sustainable living</li><li>Practical tips, actions, and mistakes to avoid</li></ul> |
 | 🧩  | **Modularity**    | <ul><li>Code organized in separate HTML, CSS, and JS files</li><li>Easy to maintain and extend</li></ul> |
 | 📱  | **Responsive Design** | <ul><li>Modern, mobile-friendly interface</li><li>Consistent look across devices</li></ul> |
