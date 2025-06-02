@@ -24,11 +24,26 @@
         </div>
     </header>
     <main class="eco-main" style="flex:1 0 auto;">
-        <section class="eco-section card">
+        <div id="intro-video-container" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 9999; display: flex; justify-content: center; align-items: center; margin:0; padding:0; background: transparent;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                <video id="intro-video" playsinline preload="auto" style="width: 80vw; max-width: 1100px; border-radius: 16px; box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25); background: #181c18; display: block;">
+                    <source src="resources/intro-video-sound.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div style="display: flex; gap: 20px;">
+                    <button id="play-video-btn" style="height: 48px; min-width: 120px; background: #6fcf97; color: #181c18; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer; box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);">Play Video</button>
+                    <button id="skip-intro-btn" style="height: 48px; min-width: 90px; background: #6fcf97; color: #181c18; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer; box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10); transition: background 0.2s;">Skip</button>
+                </div>
+            </div>
+        </div>
+        <section id="game-section" class="eco-section card" style="display: none;">
             <h1 class="eco-title">EcoZ Game</h1>
             <div class="game-content">
                 <div class="day-counter">Day <span id="current-day">1</span>/7</div>
                 <h2 id="situation-title">Situation Title</h2>
+                <div id="situation-image-container" style="width: 100%; max-width: 800px; margin: 20px auto; text-align: center;">
+                    <img id="situation-image" src="" alt="Situation illustration" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                </div>
                 <p id="situation-text">Situation description...</p>
                 <div class="choices" id="choices-container">
                     <!-- Choices will be injected here by JavaScript -->
@@ -38,11 +53,42 @@
     </main>
     <footer class="main-footer" style="flex-shrink:0;">
         <div class="footer-links">
-            <a href="about.html">About</a> | <a href="#">Privacy Policy</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </div>
         <div class="footer-copy">© 2024 EcoZ. Educational Project.</div>
     </footer>
     <script src="game.js"></script>
     <script src="chatbot.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('intro-video');
+            const playButton = document.getElementById('play-video-btn');
+            const skipButton = document.getElementById('skip-intro-btn');
+            
+            // Show play button immediately
+            playButton.style.display = 'block';
+            
+            playButton.addEventListener('click', function() {
+                video.play();
+                playButton.style.display = 'none';
+            });
+
+            skipButton.addEventListener('click', function() {
+                document.getElementById('intro-video-container').style.display = 'none';
+                document.getElementById('game-section').style.display = 'block';
+            });
+
+            video.addEventListener('ended', function() {
+                document.getElementById('intro-video-container').style.display = 'none';
+                document.getElementById('game-section').style.display = 'block';
+            });
+        });
+    </script>
+    <style>
+    #skip-intro-btn:hover, #play-video-btn:hover {
+        background: #4caf7a !important;
+    }
+    </style>
 </body>
 </html> 

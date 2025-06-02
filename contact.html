@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EcoZ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .contact-container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+            padding: 32px 24px;
+        }
+        .contact-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #181c18;
+            text-align: center;
+        }
+        .rating-group {
+            margin-bottom: 18px;
+        }
+        .rating-label {
+            font-weight: 500;
+            margin-bottom: 6px;
+            display: block;
+        }
+        .stars {
+            display: flex;
+            gap: 6px;
+        }
+        .stars input[type="radio"] {
+            display: none;
+        }
+        .stars label {
+            font-size: 1.5rem;
+            color: #bdbdbd;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .stars input[type="radio"]:checked ~ label,
+        .stars label:hover,
+        .stars label:hover ~ label {
+            color: #6fcf97;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .contact-form textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        .contact-form button {
+            background: #6fcf97;
+            color: #181c18;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 12px 24px;
+            box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: #4caf7a;
+        }
+        .confirmation {
+            text-align: center;
+            color: #388e3c;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body style="min-height:100vh;display:flex;flex-direction:column;">
+    <header class="main-header">
+        <div class="header-content">
+            <span class="site-title">ECOZ</span>
+            <nav class="main-nav">
+                <a href="game.html">Game</a>
+                <a href="eco-info.html">Guide</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+    <main style="flex:1 0 auto;">
+        <div class="contact-container">
+            <div class="contact-title">Contact us & Feedback</div>
+            <form class="contact-form" id="contactForm">
+                <div class="rating-group">
+                    <span class="rating-label">Educational value :</span>
+                    <span class="stars">
+                        <input type="radio" id="edu5" name="education" value="5"><label for="edu5">★</label>
+                        <input type="radio" id="edu4" name="education" value="4"><label for="edu4">★</label>
+                        <input type="radio" id="edu3" name="education" value="3"><label for="edu3">★</label>
+                        <input type="radio" id="edu2" name="education" value="2"><label for="edu2">★</label>
+                        <input type="radio" id="edu1" name="education" value="1"><label for="edu1">★</label>
+                    </span>
+                </div>
+                <div class="rating-group">
+                    <span class="rating-label">Fun :</span>
+                    <span class="stars">
+                        <input type="radio" id="fun5" name="fun" value="5"><label for="fun5">★</label>
+                        <input type="radio" id="fun4" name="fun" value="4"><label for="fun4">★</label>
+                        <input type="radio" id="fun3" name="fun" value="3"><label for="fun3">★</label>
+                        <input type="radio" id="fun2" name="fun" value="2"><label for="fun2">★</label>
+                        <input type="radio" id="fun1" name="fun" value="1"><label for="fun1">★</label>
+                    </span>
+                </div>
+                <div class="rating-group">
+                    <span class="rating-label">Design :</span>
+                    <span class="stars">
+                        <input type="radio" id="design5" name="design" value="5"><label for="design5">★</label>
+                        <input type="radio" id="design4" name="design" value="4"><label for="design4">★</label>
+                        <input type="radio" id="design3" name="design" value="3"><label for="design3">★</label>
+                        <input type="radio" id="design2" name="design" value="2"><label for="design2">★</label>
+                        <input type="radio" id="design1" name="design" value="1"><label for="design1">★</label>
+                    </span>
+                </div>
+                <input type="email" name="email" placeholder="Your email (optional)">
+                <textarea name="message" placeholder="Your message..."></textarea>
+                <button type="submit">Send Feedback</button>
+                <div class="confirmation" id="confirmationMsg" style="display:none;">Thank you for your feedback!</div>
+            </form>
+        </div>
+    </main>
+    <footer class="main-footer" style="flex-shrink:0;">
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copy">© 2024 EcoZ. Educational Project.</div>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('confirmationMsg').style.display = 'block';
+            this.reset();
+        });
+    </script>
+</body>
+</html> 

@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div id="eco-chatbot-btn" style="position:fixed;bottom:32px;right:32px;z-index:9999;cursor:pointer;background:#23231f;border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px 0 rgba(0,0,0,0.18);">
             <span style="font-size:2rem;color:#6fcf97;">💬</span>
         </div>
-        <div id="eco-chatbot-window" style="display:none;position:fixed;bottom:100px;right:32px;z-index:10000;width:340px;max-width:95vw;background:#181c18;border-radius:16px;box-shadow:0 4px 24px 0 rgba(0,0,0,0.25);overflow:hidden;flex-direction:column;min-width:300px;min-height:400px;display:flex;height:500px;resize:both;">
+        <div id="eco-chatbot-window" style="display:none;position:fixed;bottom:100px;right:32px;z-index:10000;width:340px;max-width:95vw;background:#181c18;border-radius:16px;box-shadow:0 4px 24px 0 rgba(0,0,0,0.25);overflow:hidden;flex-direction:column;min-width:300px;min-height:400px;height:500px;resize:both;">
             <div id="eco-chatbot-header" style="background:#23231f;padding:1rem;color:#6fcf97;font-weight:600;display:flex;justify-content:space-between;align-items:center;cursor:move;flex:0 0 auto;">
                 <span>GLitcH</span>
                 <button id="eco-chatbot-close" style="background:none;border:none;color:#bfa76f;font-size:1.3rem;cursor:pointer;">✕</button>
