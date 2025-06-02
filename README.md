@@ -11,11 +11,6 @@
 	<img src="https://img.shields.io/github/languages/top/Mizoniaq/EcoZ?style=default&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/Mizoniaq/EcoZ?style=default&color=0080ff" alt="repo-language-count">
 </p>
-<p align="center"><!-- default option, no dependency badges. -->
-</p>
-<p align="center">
-	<!-- default option, no dependency badges. -->
-</p>
 <br>
 
 ##  Table of Contents
@@ -46,15 +41,12 @@ EcoZ is an interactive project promoting environmental awareness and sustainable
 
 |      | Feature         | Summary       |
 | :--- | :---:           | :---          |
-| ⚙️  | **Architecture**  | <ul><li>Follows a **MVC** design pattern for separation of concerns</li><li>Utilizes **RESTful APIs** for communication between frontend and backend</li><li>Implements **microservices** architecture for scalability and maintainability</li></ul> |
-| 🔩 | **Code Quality**  | <ul><li>Enforces **linting** rules using **ESLint** for consistent code style</li><li>Utilizes **unit testing** with **Jest** for robust code coverage</li><li>Employs **code reviews** and **pair programming** for code quality assurance</li></ul> |
-| 📄 | **Documentation** | <ul><li>Comprehensive **HTML** documentation with detailed explanations and examples</li><li>Includes **CSS** documentation for styling guidelines and best practices</li><li>Offers **JavaScript** documentation for code structure and functionality</li></ul> |
-| 🔌 | **Integrations**  | <ul><li>Integrates **chatbot functionality** using **chatbot.js** for interactive user engagement</li><li>Connects to external **webhooks** for chatbot responses and data retrieval</li><li>Integrates **API calls** for dynamic content updates and data synchronization</li></ul> |
-| 🧩 | **Modularity**    | <ul><li>Organizes code into **separate modules** for easy maintenance and scalability</li><li>Utilizes **component-based architecture** for reusability and flexibility</li><li>Follows **DRY principles** to avoid code duplication and ensure modularity</li></ul> |
-| 🧪 | **Testing**       | <ul><li>Implements **unit tests** for critical functions and components</li><li>Utilizes **integration tests** to ensure proper interaction between modules</li><li>Performs **end-to-end testing** for overall system functionality and user experience</li></ul> |
-| ⚡️  | **Performance**   | <ul><li>Optimizes **frontend assets** for fast loading times and improved user experience</li><li>Utilizes **caching mechanisms** to reduce server load and enhance performance</li><li>Implements **lazy loading** for efficient resource utilization</li></ul> |
-| 🛡️ | **Security**      | <ul><li>Follows **OWASP** security best practices for web application security</li><li>Implements **input validation** to prevent common security vulnerabilities</li><li>Utilizes **HTTPS** protocol for secure data transmission</li></ul> |
-| 📦 | **Dependencies**  | <ul><li>Depends on **HTML**, **CSS**, and **JavaScript** for frontend development</li><li>Utilizes **package managers** for dependency management and version control</li><li>Includes **third-party libraries** for enhanced functionality and features</li></ul> |
+| 🎮  | **Interactive Game**  | <ul><li>Decision-based ecological game with multiple scenarios</li><li>Dynamic score and ending system</li></ul> |
+| 🤖  | **Chatbot Integration** | <ul><li>Integrated chatbot for eco-questions</li><li>Powered by n8n and OpenAI workflow</li></ul> |
+| 📚  | **Sustainability Guide** | <ul><li>Comprehensive guide for sustainable living</li><li>Practical tips, actions, and mistakes to avoid</li></ul> |
+| 🧩  | **Modularity**    | <ul><li>Code organized in separate HTML, CSS, and JS files</li><li>Easy to maintain and extend</li></ul> |
+| 📱  | **Responsive Design** | <ul><li>Modern, mobile-friendly interface</li><li>Consistent look across devices</li></ul> |
+| 📝  | **Documentation** | <ul><li>Clear README with project structure and usage</li><li>In-code comments for maintainability</li></ul> |
 
 ## Chatbot Integration
 
@@ -166,40 +158,24 @@ The project integrates an intelligent automated chatbot using the [n8n](https://
 
 ###  Prerequisites
 
-Before getting started with EcoZ, ensure your runtime environment meets the following requirements:
-
-- **Programming Language:** HTML
-
+No installation required. This project is fully static (HTML, CSS, JS).
 
 ###  Installation
 
-Install EcoZ using one of the following methods:
-
-**Build from source:**
-
-1. Clone the EcoZ repository:
+Clone the repository:
 ```sh
-❯ git clone https://github.com/Mizoniaq/EcoZ
+git clone https://github.com/YourUsername/EcoZ
+cd EcoZ
 ```
-
-2. Navigate to the project directory:
-```sh
-❯ cd EcoZ
-```
-
-3. Install the project dependencies:
-
-echo 'INSERT-INSTALL-COMMAND-HERE'
-
-
 
 ###  Usage
-Run EcoZ using the following command:
-echo 'INSERT-RUN-COMMAND-HERE'
+
+Open `index.html` in your browser.  
+**Note:** The homepage automatically redirects to the sustainability guide (`eco-info.html`).
 
 ###  Testing
-Run the test suite using the following command:
-echo 'INSERT-TEST-COMMAND-HERE'
+
+No automated tests. Please test the application manually by navigating through the interface.
 
 ---
 ##  Project Roadmap
@@ -262,5 +238,13 @@ This project is protected under the [SELECT-A-LICENSE](https://choosealicense.co
 ##  Acknowledgments
 
 - List any resources, contributors, inspiration, etc. here.
+
+---
+
+## Project Structure
+
+- `resources/` : Game intro video and other assets
+- `ressources2/` : Game situation and ending images
+- `ressource-readme/` : Images used in the README documentation
 
 ---
